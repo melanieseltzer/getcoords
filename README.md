@@ -16,7 +16,7 @@ $ npm install getcoords
 
 ## API Key
 
-In order to use the package, you must first obtain a Google API key and set `process.env.GOOGLE_GEOCOORDS_API_KEY` using `.env` file or similar. Please visit [the dev docs](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) for instruction on how to obtain the key.
+In order to use the package, you must first obtain a Google API key and set `process.env.GOOGLE_GEOCOORDS_API_KEY` in your project using [dotenv](https://www.npmjs.com/package/dotenv) or similar. You could also set it globally in your shell ([more info](https://unix.stackexchange.com/a/21600)). Please visit [the dev docs](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) for instruction on how to obtain the key.
 
 ## Usage
 
@@ -27,19 +27,22 @@ GOOGLE_GEOCOORDS_API_KEY=YOURKEYHERE
 
 ```js
 // app.js
+
+// Import the package
 import getCoords from 'getCoords';
+
+// Load your .env file
 require('dotenv').config();
-const { GOOGLE_GEOCOORDS_API_KEY } = process.env;
 
 // Promise syntax
-getCoords('Los Angeles, CA 90034', GOOGLE_GEOCOORDS_API_KEY)
+getCoords('Los Angeles, CA 90034')
   .then(res => console.log(res))
   .catch(error => console.log('Something went wrong'));
 
 // Or use with Async/await!
 (async () => {
   try {
-    const latlng = await getCoords('Los Angeles, CA 90034', GOOGLE_GEOCOORDS_API_KEY);
+    const latlng = await getCoords('Los Angeles, CA 90034');
     console.log(latlng);
   } catch (error) {
     console.error(error);
