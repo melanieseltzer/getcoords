@@ -2,11 +2,7 @@
 
 > Get lat and long coordinates from any address
 
-`getcoords` uses the Google Geocoding API to convert any address into geographic coordinates. Results are returned as an object:
-
-```
-{ lat: ..., lng: ... }
-```
+`getcoords` uses the Google Geocoding API to convert any address into geographic coordinates.
 
 ## Install
 
