@@ -25,7 +25,7 @@ GOOGLE_GEOCOORDS_API_KEY=YOURKEYHERE
 // app.js
 
 // Import the package
-import getCoords from 'getCoords';
+import getCoords from 'getcoords';
 
 // Load your .env file
 require('dotenv').config();
