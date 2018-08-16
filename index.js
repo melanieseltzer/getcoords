@@ -1,5 +1,4 @@
-import '@babel/polyfill';
-import axios from 'axios';
+const axios = require('axios');
 
 const getCoords = async address => {
   // This will either come from a .env file
@@ -25,4 +24,4 @@ const getCoords = async address => {
   return location;
 };
 
-export default getCoords;
+module.exports = getCoords;
