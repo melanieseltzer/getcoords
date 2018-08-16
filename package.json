@@ -1,6 +1,6 @@
 {
 	"name": "getcoords",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"description": "Get lat and long coordinates from any address.",
 	"license": "MIT",
 	"repository": "https://github.com/melanieseltzer/getcoords",
