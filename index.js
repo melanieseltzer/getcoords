@@ -1,7 +1,5 @@
+import '@babel/polyfill';
 import axios from 'axios';
-
-// Need to polyfill async/await
-require('@babel/polyfill');
 
 const getCoords = async address => {
   // This will either come from a .env file
