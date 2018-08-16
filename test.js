@@ -1,5 +1,5 @@
 import test from 'ava';
-import getCoords from './lib';
+import getCoords from '.';
 
 const sandbox = require('sinon').createSandbox();
 
