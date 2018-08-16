@@ -15,10 +15,10 @@
 	},
 	"scripts": {
 		"lint": "eslint index.js",
-		"test": "ava",
+		"test": "ava --verbose",
 		"test:watch": "ava --verbose --watch",
 		"build": "npm run lint && npm run test && babel ./index.js -d ./lib",
-		"prepare": "npm run build"
+		"prepublishOnly": "npm run build"
 	},
 	"ava": {
 		"require": [
