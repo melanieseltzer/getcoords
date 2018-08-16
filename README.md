@@ -1,4 +1,4 @@
-# 🌐 getcoords [![npm](https://img.shields.io/badge/npm-v1.0.0-blue.svg)](https://www.npmjs.com/package/getcoords) [![Build Status](https://travis-ci.org/melanieseltzer/getcoords.svg?branch=master)](https://travis-ci.org/melanieseltzer/getcoords) [![Known Vulnerabilities](https://snyk.io/test/github/melanieseltzer/getcoords/badge.svg)](https://snyk.io/test/github/melanieseltzer/getcoords)
+# 🌐 getcoords [![npm](https://img.shields.io/badge/npm-v1.0.4-blue.svg)](https://www.npmjs.com/package/getcoords) [![Build Status](https://travis-ci.org/melanieseltzer/getcoords.svg?branch=master)](https://travis-ci.org/melanieseltzer/getcoords) [![Known Vulnerabilities](https://snyk.io/test/github/melanieseltzer/getcoords/badge.svg)](https://snyk.io/test/github/melanieseltzer/getcoords)
 
 > Get lat and long coordinates from any address
 
