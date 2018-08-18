@@ -1,4 +1,4 @@
-# 🌐 getcoords [![npm](https://img.shields.io/badge/npm-v1.0.5-blue.svg)](https://www.npmjs.com/package/getcoords) [![Build Status](https://travis-ci.org/melanieseltzer/getcoords.svg?branch=master)](https://travis-ci.org/melanieseltzer/getcoords) [![Known Vulnerabilities](https://snyk.io/test/github/melanieseltzer/getcoords/badge.svg)](https://snyk.io/test/github/melanieseltzer/getcoords)
+# 🌐 getcoords [![npm](https://img.shields.io/badge/npm-v1.0.6-blue.svg)](https://www.npmjs.com/package/getcoords) [![Build Status](https://travis-ci.org/melanieseltzer/getcoords.svg?branch=master)](https://travis-ci.org/melanieseltzer/getcoords) [![Known Vulnerabilities](https://snyk.io/test/github/melanieseltzer/getcoords/badge.svg)](https://snyk.io/test/github/melanieseltzer/getcoords)
 
 > Get lat and long coordinates from any address
 
@@ -12,7 +12,11 @@ $ npm install getcoords
 
 ## API Key
 
-In order to use the package, you must first obtain a Google API key and set `process.env.GOOGLE_GEOCOORDS_API_KEY` in your project using [dotenv](https://www.npmjs.com/package/dotenv) or similar. You could also set it globally in your shell ([more info](https://unix.stackexchange.com/a/21600)). Please visit [the dev docs](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) for instruction on how to obtain the key.
+In order to use the package, you must first obtain a Google API key. Please visit [the dev docs](https://developers.google.com/maps/documentation/geocoding/start#get-a-key) for instruction on how to obtain the key.
+
+ Then, you must set `process.env.GOOGLE_GEOCOORDS_API_KEY` in your project using [dotenv](https://www.npmjs.com/package/dotenv) or similar. You could also set it globally in your shell ([more info](https://unix.stackexchange.com/a/21600)). 
+
+If you want to use it on client builds (such as in a React app) you will need to use [dotenv-webpack](https://github.com/mrsteele/dotenv-webpack).
 
 ## Usage
 
